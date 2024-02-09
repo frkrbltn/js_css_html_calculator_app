@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+    background-color: #123e6c;
+}
+h2 {
+    margin: 10px;  
+}
+.number {
+    padding: 10px 20px;
+    width: 60px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+.calculator_container, .history_container {
+    flex: 1; 
+    max-width: 50%; 
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(119, 153, 224);
+}
+
+.calculator_container {
+    margin-right: 20px; /* Spacing between the calculator and history sections */
+}
+
+.display-input {
+    padding: 10px 20px;
+    width: 20%;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: right;
+
+}
+
+.equal_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .history_container {
+    background: #e6e6e6;
+} */
+
+.history_container {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#history_list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#history_list li {
+    background: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+}
