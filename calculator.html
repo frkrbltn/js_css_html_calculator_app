@@ -9,44 +9,39 @@
 </head>
 <body>
     <div class="calculator_container">
-        <input class="display-input" type="number" id="display_nunber">
+        <input class="display-input" id="display_number">
         <div>
             <br>
             <button class="number">7</button>
             <button class="number">8</button>
             <button class="number">9</button>
-            <button class="number">/</button>
+            <button class="operand">/</button>
             <br>
             <button class="number">4</button>
             <button class="number">5</button>
             <button class="number">6</button>
-            <button class="number">x</button>
+            <button class="operand">x</button>
             <br>
             <button class="number">1</button>
             <button class="number">2</button>
             <button class="number">3</button>
-            <button class="number">-</button>
+            <button class="operand">-</button>
             <br>
             <button class="number">C</button>
             <button class="number">0</button>
             <button class="number">.</button>
-            <button class="number">+</button>
+            <button class="operand">+</button>
             <br>
             <div class="equal_button">
+                <button class="sign">(sign) -</button>
                 <button class="equal">=</button>
             </div>
         </div>
     </div>
     <div class="history_container">
         <h2>History</h2>
-        <ul id="history_list">
-            <li>1 + 1 = 2</li>
-            <li>2 + 2 = 4</li>
-            <li>3 + 3 = 6</li>
-            <li>4 + 4 = 8</li>
-            <li>5 + 5 = 10</li>
-        </ul>
-        <button >Clear History</button>
+        <ul id="history_list"></ul>
+        <button class="clear">Clear History</button>
     </div>
     
 </body>
